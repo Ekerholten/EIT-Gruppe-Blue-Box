@@ -1,0 +1,13 @@
+Her er det som må gjøres før du kan skrive I latex!
+
+En mer detaljert guide og linker finner du på "http://educ.jmu.edu/~arnoldea/latex_setup_and_tutorial.htm"
+
+1. Installer MiKTeX for windows, mactex for mac. Latex er inkludert i linux, men last ned pakken texlive, texlive-latex-recommended osv for fonter mm.
+
+2. Skaff en LaTeX editor. TeXWorks er den basic editoren (ala notepad) som jeg bruker. Kan anbefale TeXnicCenter
+   som har flere funksjoner. (http://www.texniccenter.org/resources/downloads)
+
+3. For å nå jobbe på prosjekt kan dere opprette tomme latex dokumenter, se Introduction.tex for hvordan de bør se ut,
+   Før dere legger det til i rapporten med \include{./FOLDERNAME/FILENAME.tex} (som gjort med Introduction.tex)
+
+en guide til latex: http://zrajm.org/nerd/LaTeX/quickguide.html
