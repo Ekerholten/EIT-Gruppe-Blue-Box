@@ -7,3 +7,4 @@
 \contentsline {subsection}{\numberline {2.1.3}Carpcomm Space Network}{6}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}PYXIS}{7}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Raspberry pi}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}SunPower}{7}{section.2.3}

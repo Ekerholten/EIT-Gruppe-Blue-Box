@@ -1,1 +1,45 @@
-\section{Sun Power}
+\section{SunPower}
+
+When a satellite communicates to its groundstation and operates its payload it is dependent on power supply. Without any electrical power a satellite will have noe function other than to drift around in orbit unable to communicate. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
+
+Solar panels base their operation on the ability to convert sunlight into electricity by exploiting the photovaltaic effect by using semiconductors. The convertion process where the suns radiation is converted into an electical current is achieved by creating mobile charged particles in the semiconductor. They are in turn separated by the device structure and produce the electrical current.(kilde) The use of photovaltaic solar generators is the best choice for providing electrical power to satellites in an orbit around the Earth (kilde: Solar Electricity, page 180, kilden skal skrives ordenlit!).
+
+To get information on how long communication time the CubeSat can achiece through a ground station network the energy supply must be calculated.
+
+
+Solar power calculations:
+
+
+Solar constant: $S = 1367 \frac{W}{m^2}$
+
+Area of the Earth presented to the Sun: $A_S$ 
+
+Area of the Earth: $A_S$
+
+\begin{tabbing}
+Total energy flux on the Earth: \=\boldmath$S_E\times A_E = S\times A_S$\\
+
+
+						\>$S_E = \frac{S\times \pi\times R^2}{4\times \pi\times R^2}$\\
+
+
+						\>$S_E = \frac{S}{4} = 342\frac{W}{m^2}$\\
+\end{tabbing}
+
+Orbitale period of the satellite: $T = 5700sek$ (from Atg simultation program)
+
+Efficiency of the solarcells: $\eta = 0.16$
+
+Average area exposed to the sun: $A_Sat = 0.016213185 m^2$
+
+Input energy to the satellite from the sun: $E [J]$
+
+Power from the sun to the satellite: $P [W]$
+				
+\begin{tabbing}
+						 \=\boldmath$E = A_Sat\times S\times T\times \eta$\\
+						\>$E = 20213.04  J$\\
+						\>\boldmath$P = A_Sat\times S\times \eta$\\
+						\>$P = 3.55 W$\\
+\end{tabbing}
+
