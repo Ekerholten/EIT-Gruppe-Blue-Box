@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.4)  27 FEB 2013 11:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.9.4)  6 MAR 2013 11:38
 entering extended mode
-**C:/Users/Eirik/Documents/DropBox/EiT*gruppe*2/Rapport/report_main.tex
-("C:/Users/Eirik/Documents/DropBox/EiT gruppe 2/Rapport/report_main.tex"
+**C:/Users/Eirik/EIT-Gruppe-Blue-Box/Rapport/report_main.tex
+(C:/Users/Eirik/EIT-Gruppe-Blue-Box/Rapport/report_main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -465,13 +465,11 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 Package hyperref Info: Option `breaklinks' set `true' on input line 23.
 
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.aux"
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Preface/Abstract.aux")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Introduction/Introducti
-on.aux")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/Theory.aux")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Bibliography/Bibliograp
-hy.aux"))
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.aux
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Preface/Abstract.aux)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Introduction/Introduction.aux)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/Theory.aux)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Bibliography/Bibliography.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
@@ -487,7 +485,8 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 33.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -518,23 +517,23 @@ LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
 
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.out")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.out")
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.out)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.out)
 \@outlinefile=\write3
 
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\title.tex" [1
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\title.tex [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Preface/Abstract.tex")p
-dfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
-een already used, duplicate ignored
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Preface/Abstract.tex)pdfTeX warning
+ (ext4): destination with the same identifier (name{page.1}) has been already u
+sed, duplicate ignored
 <to be read again> 
                    \relax 
 l.38 \include{Preface/Abstract}
                                 [1
 
 ]
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.toc"
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 2.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
@@ -567,36 +566,36 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 ]
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.lof")
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.lof)
 \tf@lof=\write5
-
-[3
-
-] ("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.lot")
-\tf@lot=\write6
-
-[4
+ [3
 
 ]
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Introduction/Introducti
-on.tex"
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.lot)
+\tf@lot=\write6
+ [4
+
+]
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Introduction/Introduction.tex
 Chapter 1.
+
+LaTeX Warning: Reference `groupmembers' on page 5 undefined on input line 6.
+
 ) [5
 
 
-] ("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/Theory.tex"
+] (C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/Theory.tex
 Chapter 2.
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/Pico.tex")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/Genso.tex")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/Carpcomm.tex")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/PYXIS.tex"
-[6
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/Pico.tex)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/Genso.tex)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/Carpcomm.tex)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/PYXIS.tex [6
 
 
 
 ])
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/raspberrypi.tex"
-<Figures/raspberrypi_modelb_hl.jpg, id=98, 513.92pt x 400.49625pt>
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/raspberrypi.tex
+<Figures/raspberrypi_modelb_hl.jpg, id=96, 513.92pt x 400.49625pt>
 File: Figures/raspberrypi_modelb_hl.jpg Graphic file (type jpg)
 
 <use Figures/raspberrypi_modelb_hl.jpg>
@@ -604,13 +603,13 @@ Package pdftex.def Info: Figures/raspberrypi_modelb_hl.jpg used on input line 8
 .
 (pdftex.def)             Requested size: 251.9989pt x 196.38542pt.
 
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/raspberrypi_pins
-.tex"))) [7] [8 <C:/Users/Eirik/Documents/DropBox/EiT gruppe 2/Rapport/Figures/
-raspberrypi_modelb_hl.jpg>]
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Bibliography/Bibliograp
-hy.tex"
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/raspberrypi_pins.tex)))
+[7] [8 <C:/Users/Eirik/EIT-Gruppe-Blue-Box/Rapport/Figures/raspberrypi_modelb_h
+l.jpg>]
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Bibliography/Bibliography.tex
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
@@ -636,27 +635,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
- ("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\report_main.aux"
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Preface/Abstract.aux")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Introduction/Introducti
-on.aux")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Theory/Theory.aux")
-("C:\Users\Eirik\Documents\DropBox\EiT gruppe 2\Rapport\Bibliography/Bibliograp
-hy.aux"))
+ (C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\report_main.aux
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Preface/Abstract.aux)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Introduction/Introduction.aux)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Theory/Theory.aux)
+(C:\Users\Eirik\EIT-Gruppe-Blue-Box\Rapport\Bibliography/Bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `report_main.out' has not changed.
 (rerunfilecheck)             Checksum: 0A09EFE625197BFBE8BE12B0ACCEABD7;550.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
- 5623 strings out of 494045
- 85101 string characters out of 3145970
+ 5624 strings out of 494045
+ 84466 string characters out of 3145970
  159756 words of memory out of 3000000
- 8758 multiletter control sequences out of 15000+200000
+ 8759 multiletter control sequences out of 15000+200000
  56330 words of font info for 40 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 29i,11n,30p,559b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,30p,548b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
@@ -664,9 +665,9 @@ fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lm
 r17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on report_main.pdf (10 pages, 256572 bytes).
+Output written on report_main.pdf (10 pages, 258484 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 153 PDF objects out of 1000 (max. 8388607)
  31 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
