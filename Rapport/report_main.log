@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.22)  6 MAR 2013 13:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.22)  6 MAR 2013 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,14 +621,16 @@ Package pdftex.def Info: Figures/raspberrypi_modelb_hl.jpg used on input line 8
 (pdftex.def)             Requested size: 251.9989pt x 196.38542pt.
  (./Theory/raspberrypi_pins.tex)
 (./Theory/raspberrypi_rs232.tex
-<../Schematics/UART-to-RS232.pdf, id=105, 845.1575pt x 597.45204pt>
-File: ../Schematics/UART-to-RS232.pdf Graphic file (type pdf)
+<../Schematics/RPI-RS232-schematic.pdf, id=105, 845.1575pt x 597.45204pt>
+File: ../Schematics/RPI-RS232-schematic.pdf Graphic file (type pdf)
 
-<use ../Schematics/UART-to-RS232.pdf>
-Package pdftex.def Info: ../Schematics/UART-to-RS232.pdf used on input line 5.
-(pdftex.def)             Requested size: 251.9989pt x 180.6938pt.
-)) (./Theory/Sunpower.tex)) [7] [8 <../Schematics/UART-to-RS232.pdf, page is ro
-tated 90 degrees> <./Figures/raspberrypi_modelb_hl.jpg>] [9]
+<use ../Schematics/RPI-RS232-schematic.pdf>
+Package pdftex.def Info: ../Schematics/RPI-RS232-schematic.pdf used on input li
+ne 5.
+(pdftex.def)             Requested size: 251.9989pt x 168.48473pt.
+)) (./Theory/Sunpower.tex)) [7]
+[8 <../Schematics/RPI-RS232-schematic.pdf, page is rotated 90 degrees> <./Figur
+es/raspberrypi_modelb_hl.jpg>] [9]
 \openout2 = `Bibliography/Bibliography.aux'.
 
  (./Bibliography/Bibliography.tex
@@ -675,7 +677,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
  5751 strings out of 495059
- 83971 string characters out of 3182030
+ 84001 string characters out of 3182030
  162185 words of memory out of 3000000
  8759 multiletter control sequences out of 15000+200000
  56330 words of font info for 40 fonts, out of 3000000 for 9000
@@ -687,10 +689,10 @@ hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
 t10.pfb>
-Output written on report_main.pdf (11 pages, 283151 bytes).
+Output written on report_main.pdf (11 pages, 250365 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 176 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  34 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
