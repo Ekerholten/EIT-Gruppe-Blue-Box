@@ -1,0 +1,46 @@
+pull: 	pulls all changes made to the repository to your local directory (i.e. downloads the updates to the project)
+		example usage: 	git pull
+
+add: 	Adds filechanges in your local directory to your index (also called staging changes, means 
+	that your next commit will include the staged changes)
+		example usage: 	git add .
+				git add theory.tex
+
+commit:	Takes all changes written in the index and creates a new commit object pointing to the index
+	and sets the branch to point to that new commit. (i.e. commiting all staged changes to your
+	local directory and moving the branch pointer to this commit)
+		example usage:	git commit -m "This is the commitmessage"
+
+push:	Pushes all local commits to the remote repository and advances its branches.
+		example usage: git commit -u origin master
+
+
+
+For more commands and examples, one can visit: http://www.siteground.com/tutorials/git/commands.htm
+
+
+
+
+Shortguide to working with a git repository:
+
+Before you start making changes to the files, you typically want to update
+your local directory with new changes commited by other people working on this
+project. In the terminal you would first change the directories into the cloned
+repository, before pulling the changes from the remote repository. For our
+project this means, if you're in the terminal, to write:
+
+cd EIT-Gruppe-Blue-Box/
+git pull
+
+After the update is complete, you can then change the files you want, before you
+first add the new changes, makes a commit, pulls any changes that happened 
+while you were working, and finally, push the local changes to the remote repository.
+for this project that means:
+
+git add .
+git commit -m "Updated documentx.tex with a section about candy"
+git pull
+git push -u origin master'
+
+
+when prompted, insert your username and password to push and pull.

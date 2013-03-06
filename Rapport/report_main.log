@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.6)  6 MAR 2013 14:49
+=======
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.2.22)  6 MAR 2013 13:37
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **report_main.tex
 (./report_main.tex
 LaTeX2e <2011/06/27>
+<<<<<<< HEAD
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
 c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
@@ -19,6 +24,13 @@ welsh, loaded.
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/size11.clo
+=======
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -34,19 +46,31 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.dfu
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -196,7 +220,11 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ot1enc.dfu
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -227,7 +255,11 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omsenc.dfu
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -251,6 +283,7 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -259,6 +292,16 @@ File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/lmodern.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -293,6 +336,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
@@ -301,10 +345,21 @@ Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
@@ -312,10 +367,20 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
 
@@ -324,6 +389,16 @@ Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -364,6 +439,7 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
@@ -372,20 +448,38 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/pd1enc.def
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count91
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4062.
@@ -416,18 +510,27 @@ LaTeX Info: Redefining \pageref on input line 5847.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/hpdftex.def
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 \c@bookmark@seq@number=\count98
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip43
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -438,6 +541,18 @@ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
@@ -445,7 +560,11 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/booktabs/booktabs.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen108
 \lightrulewidth=\dimen109
@@ -488,10 +607,17 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 33.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+=======
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen121
@@ -507,10 +633,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box27
 Package hyperref Info: Link coloring ON on input line 33.
+<<<<<<< HEAD
  (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+=======
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count109
@@ -524,10 +657,17 @@ LaTeX Info: Redefining \nameref on input line 33.
 \openout3 = `report_main.out'.
 
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -535,17 +675,30 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+=======
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 (./title.tex [1
 
+<<<<<<< HEAD
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \openout2 = `Preface/Abstract.aux'.
 
  (./Preface/Abstract.tex)pdfTeX warning (ext4): destination with the same ident
 ifier (name{page.1}) has been already used, duplicate ignored
+=======
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\openout2 = `Preface/Abstract.aux'.
+
+
+(./Preface/Abstract.tex)pdfTeX warning (ext4): destination with the same identi
+fier (name{page.1}) has been already used, duplicate ignored
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 <to be read again> 
                    \relax 
 l.38 \include{Preface/Abstract}
@@ -554,22 +707,38 @@ l.38 \include{Preface/Abstract}
 ] (./report_main.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 2.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/ot1lmr.fd
+=======
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 2.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/omllmm.fd
+=======
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 2.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/omslmsy.fd
+=======
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 2.
 
+<<<<<<< HEAD
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/omxlmex.fd
+=======
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -585,14 +754,23 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [2
 
 
+<<<<<<< HEAD
 ]
 (./report_main.lof)
+=======
+] (./report_main.lof)
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 \tf@lof=\write5
 \openout5 = `report_main.lof'.
 
  [3
 
+<<<<<<< HEAD
 ] (./report_main.lot)
+=======
+]
+(./report_main.lot)
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 \tf@lot=\write6
 \openout6 = `report_main.lot'.
 
@@ -601,8 +779,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ]
 \openout2 = `Introduction/Introduction.aux'.
 
+<<<<<<< HEAD
 
 (./Introduction/Introduction.tex
+=======
+ (./Introduction/Introduction.tex
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 Chapter 1.
 
 LaTeX Warning: Reference `groupmembers' on page 5 undefined on input line 6.
@@ -621,13 +803,18 @@ Chapter 2.
 
 
 ]) (./Theory/raspberrypi.tex
+<<<<<<< HEAD
 <Figures/raspberrypi_modelb_hl.jpg, id=102, 513.92pt x 400.49625pt>
+=======
+<Figures/raspberrypi_modelb_hl.jpg, id=104, 513.92pt x 400.49625pt>
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: Figures/raspberrypi_modelb_hl.jpg Graphic file (type jpg)
 
 <use Figures/raspberrypi_modelb_hl.jpg>
 Package pdftex.def Info: Figures/raspberrypi_modelb_hl.jpg used on input line 8
 .
 (pdftex.def)             Requested size: 251.9989pt x 196.38542pt.
+<<<<<<< HEAD
  (./Theory/raspberrypi_pins.tex))
 (./Theory/SunPower.tex [7] [8 <./Figures/raspberrypi_modelb_hl.jpg>])) [9]
 \openout2 = `Bibliography/Bibliography.aux'.
@@ -637,6 +824,26 @@ Package pdftex.def Info: Figures/raspberrypi_modelb_hl.jpg used on input line 8
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/t1lmtt.fd
+=======
+ (./Theory/raspberrypi_pins.tex)
+(./Theory/raspberrypi_rs232.tex
+<../Schematics/RPI-RS232-schematic.pdf, id=105, 845.1575pt x 597.45204pt>
+File: ../Schematics/RPI-RS232-schematic.pdf Graphic file (type pdf)
+
+<use ../Schematics/RPI-RS232-schematic.pdf>
+Package pdftex.def Info: ../Schematics/RPI-RS232-schematic.pdf used on input li
+ne 5.
+(pdftex.def)             Requested size: 251.9989pt x 168.48473pt.
+)) (./Theory/Sunpower.tex)) [7]
+[8 <../Schematics/RPI-RS232-schematic.pdf, page is rotated 90 degrees> <./Figur
+es/raspberrypi_modelb_hl.jpg>] [9]
+\openout2 = `Bibliography/Bibliography.aux'.
+
+ (./Bibliography/Bibliography.tex
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 4.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
@@ -668,7 +875,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
 Package rerunfilecheck Info: File `report_main.out' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: 77D13D7F8091566C80E2132D673A1817;596.
+=======
+(rerunfilecheck)             Checksum: F02CBFF72D6042897EF15343D97CC947;597.
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 
 
 LaTeX Warning: There were undefined references.
@@ -676,6 +887,7 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  5755 strings out of 493488
  84542 string characters out of 3141327
  163423 words of memory out of 3000000
@@ -705,4 +917,25 @@ PDF statistics:
  170 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ 5751 strings out of 495059
+ 84001 string characters out of 3182030
+ 162185 words of memory out of 3000000
+ 8759 multiletter control sequences out of 15000+200000
+ 56330 words of font info for 40 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 29i,11n,30p,724b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
+public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
+t10.pfb>
+Output written on report_main.pdf (11 pages, 250365 bytes).
+PDF statistics:
+ 176 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> 254f854f705455918e4a590203ee08b3d80dec7d
 
