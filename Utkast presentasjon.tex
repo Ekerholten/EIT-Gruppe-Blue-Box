@@ -18,13 +18,15 @@ Innledning:
 Prosjektet: Hva er gjort
 
 - Sette opp raspberrry, installere programvaren til Carpcomm.
+	Det denne softwaren gjør er å ta imot data fra antennen og legger det opp i nettverket. Dette gjør at man kan motta data fra flere bakkestasjoner og dele det slik at man får flere nedlastinger per pass.
 - Software:		
 	mulighet for å motta signaler men ikke sende
 	muligheten for å laste opp data på et delt nettverk
-- Lage antenneovergang, sender signaler til antennestyringsboksen
-- Installere hamlib, en programvare for å kunne styre rotoren til antennen.
-- Lagde en overgang fra raspberry til antennestyringsboksen for å kunne styre antennen. 
-- Utfordring: Antennen har vært nede så har ikke fått testen opp mot denne. Koblet oss til en tv motaker for å teste om vi kunne motta signaler. Dette fungerte :)
+- Lage overgang til antennestyringsboksen slik at vi kan motta signaler fra sattelittene. Om man ikke kan styre antennen rettet mot satelitten så blir overførings hastigheten veldig lav. 
+- Installere hamlib programvaren slik at man kan styre rotoren til antennen med raspberry pi.
+- Utfordring: Antennen har vært nede så har ikke fått testen opp mot denne. Vi fikk derfor ikke testet å motta signaler fra en sattelitt. Vi prøvde derfor å  Koble oss til en tv motaker for å se om carpcomm nettverket fungerte. Dette fungerte :). i teorien så skal det ikke være noe forskjell fra den andre antennen så vi er ganske sikkre på at dette skal fungere. 
+- vi sjekket også muligheten for å bruke usrp (radio) , men denne krever en 1 gbyte ethernet noe raspberry ikke støtter. Vi la derfor denne død. Kunne selvfølgelig brykt eb vanelig pc, men vi ville holde oss til raspberry.
+-
 
 - Veien videre/konklusjon:
 
