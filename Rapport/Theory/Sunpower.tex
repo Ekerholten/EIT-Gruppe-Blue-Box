@@ -10,9 +10,13 @@ Batteries are used to preserve power during eclipse to support the payload. When
 
 \vspace{5 mm} When estimating the maximue time the satelite spents in one orbial period the earth and orbit is assimed to be spheres. Kepler`s third law for circular orbits is used:
 
-\vspace{5 mm}$\frac{4\times\pi}{t^2} = \frac{GM}{R^3}$
+\begin{equation}\frac{4\times\pi}{t^2} = \frac{GM}{R^3}
+\label{Kepler`s 3.law}
+\end{equation}
 
-$t = 2\times\pi\times R_{sat}\times (\frac{R_{sat}}{M\times G})^{\frac{1}{2}}$
+\begin{equation}t = 2\times\pi\times R_{sat}\times (\frac{R_{sat}}{M\times G})^{\frac{1}{2}}
+\label{Time spent in orbit}
+\end{equation}
 
 \vspace{5 mm}Universal constant of gravitation: $G = 6.6742\times 10^{-11} \frac{km^3}{s^2}$
 
@@ -28,26 +32,35 @@ Orbial Hight: $h_1 = 350km, h_2=650km $
 
 \vspace{5 mm}$h_1 = 350km$
 
+equation \ref{Time spent in orbit} 
 $t_1 = 5482.5 s = 91.4 min$
 
 \vspace{5 mm}$h_2 = 650km$
 
-$t_2 = 5854.1 s = 97.6 min$
+equation \ref{Time spent in orbit} $t_2 = 5854.1 s = 97.6 min$
 
 \vspace{5 mm}From Dewald De Bruyns equations one can calculate the longest possible time in eclipse. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations. This power is claculated when the satelite has longest time eclipse.
 
-\vspace{5 mm}$t_{ecl,max} = 2\times R_{sat}\times(\frac{R_{sat}}{R\times M})^{\frac{1}{2}}$
+\begin{equation}t_{ecl,max} = 2\times R_{sat}\times(\frac{R_{sat}}{R\times M})^{\frac{1}{2}}
+\label{Maximum time in eclipse}
+\end{equation}
 
-$P_{avg,orbit} = P_{avg}\times\frac{(t-t_{ecl,max})}{t}$
+\begin{equation}P_{avg,orbit} = P_{avg}\times\frac{(t-t_{ecl,max})}{t}
+\label{Average effect during one orbit}
+\end{equation}
 
 \vspace{5 mm}This becomes for each of the possible heights:
 
-\vspace{5 mm}$t_{ecl,max_1} = 2175.75 s = 36.3 min$
+equation \ref{Maximum time in eclipse}
+$t_{ecl,max_1} = 2175.75 s = 36.3 min$
 
+equation \ref{Average effect during one orbit}
 $P_{avg,orbit_1} = 3.27W$
 
-\vspace{5 mm}$t_{ecl,max_2} = 2118.9 s = 35.3 min$
+equation \ref{Maximum time in eclipse}
+$t_{ecl,max_2} = 2118.9 s = 35.3 min$
 
+equation \ref{Average effect during one orbit}
 $P_{avg,orbit_2} = 3.46W$
 
 \vspace{5 mm}These are simpliefied calculations where the teperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but this requires more extensive calculations. The average power calculated here is based on worst- case estimate from De Bruyns and the real average power can be clculated with the exact orbital parameters. 
@@ -57,27 +70,48 @@ These cells have a typicall voltage of 3.3 V. The Cubesat has $4\times 1.1 Ah$ c
 
 \vspace{5 mm}Total capacity: $C_{tot} = 2.2 Ah$
 
-The battery capacity used during eclipse: $C_{ecl} = \frac{P_{avg,orbit}}{V_tot}\times t_{ecl,max}$
+The battery capacity used during eclipse: 
+\begin{equation}
+C_{ecl} = \frac{P_{avg,orbit}}{V_tot}\times t_{ecl,max}
+\label{Battery capacity}
+\end{equation}
 
  $DOD_{max} = \frac{C_{ecl}}{C_{tot}}$
 
 \vspace{5 mm}Calculted with the different hights give:
 
-\vspace{5 mm}$C_{ecl_1} = \frac{3.34W}{6.6V}\times(\frac{35.9min}{60\frac{min}{hour}}) = 0.303 Ah$
+equation \ref{Battery capacity}
+$C_{ecl_1} = \frac{3.27W}{6.6V}\times(\frac{36.3min}{60\frac{min}{hour}}) = 0.3Ah$
 
-$C_{ecl_2} = \frac{3.46W}{6.6V}\times(\frac{35.3min}{60\frac{min}{hour}}) = 0.32 Ah$
-
-
-To establish the communication time a simplified power balance is used. 
-
-$P_{radio} = 2.5 W$
-$P_{payload} = 5 W / 10 obits = 0.5 W$ for one arbit
-
-These numbers are supplied from NUTS but are rough estimates of what can be expected.
-
-$(P_{avg,orbit} - P_{payload}*t)= P_{radio}*t_{communication}$
+equation \ref{Battery capacity}
+$C_{ecl_2} = \frac{3.46W}{6.6V}\times(\frac{35.3min}{60\frac{min}{hour}}) = 0.31 Ah$
 
 
+\vspace{5 mm}To establish the communication time a simplified power balance is used. 
+
+\vspace{5 mm}$P_{radio} = 2.5 W$
+
+$P_{payload} = 5 W in 90s$
+
+Mikrokontroller is in standby and with 18.5mA and 3.3V it uses:
+
+$P_{standby} = 0.0612W$ 
+
+These numbers are supplied from NUTS and are rough estimates of what can be expected.
+
+\begin{equation} P_{avg,orbit}\times t - P_{payload}\times 90s - P_{standby}\times t= P_{radio}\times t_{communication}
+\label{Communicationtime}
+\end{equation}
+
+Communication time $h_1$:
+
+equation \ref{Communicationtime}
+$t_{communication} = 6856,9s =114.3min$
+
+Communication time $h_2$:
+
+equation \ref{Communicationtime}
+$t_{communication} = 7778,77s =129.6min$
 
 
 
