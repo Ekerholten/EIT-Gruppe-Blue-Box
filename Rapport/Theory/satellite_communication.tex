@@ -2,24 +2,23 @@
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=1.0\textwidth]{Figures/accesstid450og650}
+    \includegraphics[width=1.0\textwidth]{Figures/accesstid450_500_650horizont}
   \end{center}
-  \caption[Accesstid for 450 og 650]{Access times for $h=450km$ and $h=650km$ as a function of ground station latitude}
-  \label{fig:acctid}
+  \caption[LOS for 450 og 650]{Time above the horizon for a satellite with altitude $h=450km$, $h=500km$ and $h=650km$ as a function of ground station latitude}
+  \label{fig:access_horizon}
 \end{figure}
-
-Since we don't know when the satellite will be launched we don't know the exact orbit. The project manager, Roger Birkeland, told us that we can assume the orbit will  have a height above the Earth somewhere between 450km and 650km and inclination of 98 degrees. The uncertainty in $h$ is critical, because the height above the earth dramatically changes the access time of a ground station, see Fig. \ref{fig:acctid}. 
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=0.7\textwidth]{Figures/groundstation_satelitte_geometry}
   \end{center}
   \caption[Ground station satellite geometry]{Illustration of geometry between a ground station and a satellite}
-  \label{fig:gs_s_geom}
+  \label{fig:ground_station_satellite_geometry}
 \end{figure}
 
-The ground station can only communicate with a satelitte when it has a certain elevation. Which may depend on topology, atmosphere, antenna ...
-In the following we assume that the minimum elevation is 25 degrees, maximum elevation is 90 degrees and no constraints on the azimuth angle.  For a illustration see Fig. \ref{fig:gs_s_geom}.
+Since we don't know when the satellite will be launched we don't know the exact orbit. The project manager, Roger Birkeland, told us that we can assume the orbit will  have a height above the Earth somewhere between 450km and 650km and inclination of 98 degrees.
+
+The height above the earth dramatically changes the time the satellite is seen by the ground station, see Fig. \ref{fig:access_horizon}. The signal will be weaker when the satellite is further away, it is therefore necessary to increase the minimum elevation angle $\epsilon$, see Fig. \ref{fig:ground_station_satellite_geometry}, to maintain SNR.  Previous work\cite{antennemaster}\cite{bildemaster} has calculated the minimum elevation angle, for a ground station here in Trondheim, for satellites with different altitudes and found that these effects cancel each other out. In the following we'll assume that the altitude is 500 km and the minimum elevation angle is 28 degrees.
 
 \begin{figure}
   \begin{center}
@@ -29,13 +28,11 @@ In the following we assume that the minimum elevation is 25 degrees, maximum ele
   \label{fig:ntnu_range}
 \end{figure}
 
-The result of this is that the ground station can communicate with the satelitte whenever the ground track is inside a rough circle centered on the ground station, see Fig. \ref{fig:ntnu_range} for the estimated "range" of the ground station at Gløshaugen operating with these constraints.
+The result of this is that the ground station can communicate with the satellite whenever the ground track is inside a rough circle centered on the ground station, see Fig. \ref{fig:ntnu_range} for the estimated "range" of the ground station at Gløshaugen operating with these constraints. The efficency of a network of ground stations is reduced when the ranges overlap, so to have a efficient network the nodes must be geographically far apart. In this case the ground stations must be more than 1600 km apart to have maximum efficency.
 
-The Gløshaugen ground station will on average be able to communicate with the satellite 540 seconds per day if $h=450$ and 980 seconds per day if $h=650$. We don't know exactly how much data we need to download, but according to \cite{eks-kom} we'll need roughly 12 minutes (720 seconds) to download a single image. 
+The Gløshaugen ground station will on average be able to communicate with the satellite 520 seconds per day. The precise amount of data that must be downloaded is unknown (*Her mangler litt*)
 
 \subsection{Other ground stations}
-Fig. \ref{fig:acctid} shows that the access time for a (near) polar satellite is nearly constant for ground stations at latitudes below 45 degrees. The access times of a ground station those low latitudes is in the 300 to 500 second range, i.e. about half a image, so we'll need about 2 ground stations at lower latitudes to download a single image. We may compare this to a single ground station located in Longyearbyen (78' N) which has a access time in the 1400 to 2300 second range, i.e. 2-3 images per day. 
-
 \begin{figure}
   \begin{center}
     \includegraphics[width=0.9\textwidth]{Figures/verdenskart}
@@ -44,7 +41,5 @@ Fig. \ref{fig:acctid} shows that the access time for a (near) polar satellite is
   \label{fig:world}
 \end{figure}
 
-Most prospective partners in this network are at lower latitudes (see Fig.  \ref{fig:world}). This means that to download 5 images through a network like this we need at least 8 other nodes in the network. Other stations will probably have some overlap with each other, down time, conflicting schedules etc. so the optimal number of nodes is probably far higher.
-
-
-
+\subsection{Other ground stations}
+Fig. \ref{fig:acctidf} shows that the access time for a (near) polar satellite is almost latitude independent for ground stations at latitudes below 45 degrees. The access times of a ground station those low latitudes are about about 280 seconds/day, i.e. half the duration we get here in Trondheim. For higher latitudes the access time increases dramatically. And the average access time for a ground station in Longyearbyen (78N) is in fact as high has 1300 seconds/day.

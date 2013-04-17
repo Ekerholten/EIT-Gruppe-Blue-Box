@@ -6,40 +6,68 @@ Solar panels base their operation on the ability to convert sunlight into electr
 
 To get information on how long communication time the CubeSat can achiece through a ground station network the energy supply must be calculated.
 
+Batteries are used to preserve power during eclipse to support the payload. When calculating the battery power the eclipse must be taken into acount. When the sun is blocked from the satelite by the earth the battery is accountable for the power during that part of the orbit. Communication with the stelite thorugh the groundstation network demands power from the satelite. The power budget and the battery power need to be established.
 
-Solar power calculations:
+\vspace{5 mm} When estimating the maximue time the satelite spents in one orbial period the earth and orbit is assimed to be spheres. Kepler`s third law for circular orbits is used:
+
+\vspace{5 mm}$\frac{4\times\pi}{t^2} = \frac{GM}{R^3}$
+
+$t = 2\times\pi\times R_{sat}\times (\frac{R_{sat}}{M\times G})^{\frac{1}{2}}$
+
+\vspace{5 mm}Universal constant of gravitation: $G = 6.6742\times 10^{-11} \frac{km^3}{s^2}$
+
+Earths Mass: $M = 5.9736\times 10^{24}\ kg$
+
+Radius of the Earth: $R_earth = 6371 km$
+
+Distance from to the satellite: $R_sat = R_earth + h$
+
+Orbial Hight: $h_1 = 350km, h_2=650km $
+
+\vspace{5 mm}Since it is uncertain what altitude the satellite will settle in after it is launched, two hights is used in the calculations assumed that the satellite wi settle in this interval.
+
+\vspace{5 mm}$h_1 = 350km$
+
+$t_1 = 5482.5 s = 91.4 min$
+
+\vspace{5 mm}$h_2 = 650km$
+
+$t_2 = 5854.1 s = 97,6 min$
+
+\vspace{5 mm}From Dewald De Bruyns equations one can calculate the longest possible time in eclipse. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations.  
+
+\vspace{5 mm}$t_{ecl,max} = 2\times R_{sat}\times(\frac{R_{sat}}{R\times M})^{\frac{1}{2}}$
+
+$P_{avg,orbit} = P_{avg}\times\frac{(t-t_{ecl,max})}{t}$
+
+\vspace{5 mm}This becomes for each of the possible heights:
+
+\vspace{5 mm}$t_{ecl,max_1} = 2175.75 s = 36.3 min$
+
+$P_{avg,orbit_1} = 3.27W$
+
+\vspace{5 mm}$t_{ecl,max_2} = 2118.9 s = 35.3 min$
+
+$P_{avg,orbit_2} = 3.46W$
+
+\vspace{5 mm}These are simpliefied calculations where the teperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but this requires more extensive calculations. The average power calculated here is based on worst- case estimate and the real average power can be clculated with the exact orbital parameters. 
+
+The battery used in the NUTS Cubsat wil consist of lithium-ferrite-phosphate cells $(LiFePO_4)$. 
+These cells have a typicall voltage of 3.3 V. The Cubesat has $4\times 1.1 Ah$ cells, where two is in serie and two is in parallel. This means a total of $2.2Ah$ at $6.6V$. This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicate the state of charge where $100\% $= empty and  $0\%$ = full.
+
+\vspace{5 mm}Total capacity: $C_{tot} = 2.2 Ah$
+
+The battery capacity used during eclipse: $C_{ecl} = \frac{P_{avg,orbit}}{V_tot}\times t_{ecl,max}$
+
+ $DOD_{max} = \frac{C_{ecl}}{C_{tot}}$
+
+\vspace{5 mm}Calculted with the different hights give:
+
+\vspace{5 mm}$C_{ecl_1} = \frac{3.34W}{6.6V}\times(\frac{35.9min}{60\frac{min}{hour}}) = 0.303 Ah$
+
+$C_{ecl_2} = \frac{3.46W}{6.6V}\times(\frac{35.3min}{60\frac{min}{hour}}) = 0.32 Ah$
 
 
-Solar constant: $S = 1367 \frac{W}{m^2}$
-
-Area of the Earth presented to the Sun: $A_S$ 
-
-Area of the Earth: $A_S$
-
-\begin{tabbing}
-Total energy flux on the Earth: \=\boldmath$S_E\times A_E = S\times A_S$\\
 
 
-						\>$S_E = \frac{S\times \pi\times R^2}{4\times \pi\times R^2}$\\
-
-
-						\>$S_E = \frac{S}{4} = 342\frac{W}{m^2}$\\
-\end{tabbing}
-
-Orbitale period of the satellite: $T = 5700sek$ (from Atg simultation program)
-
-Efficiency of the solarcells: $\eta = 0.16$
-
-Average area exposed to the sun: $A_Sat = 0.016213185 m^2$
-
-Input energy to the satellite from the sun: $E [J]$
-
-Power from the sun to the satellite: $P [W]$
-				
-\begin{tabbing}
-						 \=\boldmath$E = A_Sat\times S\times T\times \eta$\\
-						\>$E = 20213.04  J$\\
-						\>\boldmath$P = A_Sat\times S\times \eta$\\
-						\>$P = 3.55 W$\\
-\end{tabbing}
 
