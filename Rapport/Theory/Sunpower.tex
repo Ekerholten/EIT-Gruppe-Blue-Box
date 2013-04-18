@@ -1,12 +1,12 @@
 \section{SunPower}
 
-Communication with the stelite thorugh the groundstation network demands power from the satelite. Without any electrical power a satellite will not be able to support its payload or comunicate and will only drift around in orbit. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
+Communication with the stellite through the groundstation network demands power from the satellite. Without any electrical power a satellite will not be able to support its payload or comunicate. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
 
-Solar panels base their operation on the ability to convert sunlight into electricity by exploiting the photovaltaic effect by using semiconductors. The convertion process where the suns radiation is converted into an electical current is achieved by creating mobile charged particles in the semiconductor. They are in turn separated by the device structure and produce the electrical current.(kilde) The use of photovaltaic solar generators is the best choice for providing electrical power to satellites in an orbit around the Earth (kilde: Solar Electricity, page 180, kilden skal skrives ordenlit!).
+Solar panels base their operation on the ability to convert sunlight into electricity. By using semiconductors the photovaltaic effect can be exploited. The convertion process where the suns radiation is converted into an electical current is achieved by creating mobile charged particles in the semiconductor. They are in turn separated by the device structure and produce the electrical current.(kilde) 
 
-To get information on how long communication time the CubeSat can achiece through a ground station network the energy supply must be calculated.
+Batteries are used to preserve power during eclipse and support the payload. When the satellite is in eclipse the earth blocks the solar radiation and the battery is accountable for the power. In this part of the orbit the battery is accountable for the power demand.
 
-Batteries are used to preserve power during eclipse to support the payload. When calculating the battery power the eclipse must be taken into acount. When the sun is blocked from the satelite by the earth the battery is accountable for the power during that part of the orbit. Communication with the stelite thorugh the groundstation network demands power from the satelite. 
+Identifying the satellites communication necessary to establish if a groundstation network is profitable. Forthcoming calculations are based on an estimate done by De Bruyne \cite{Satellite Power Systems}.
 
 \vspace{5 mm} When estimating the maximue time the satelite spents in one orbial period the earth and orbit is assimed to be spheres. Kepler`s third law for circular orbits is used:
 
@@ -26,20 +26,20 @@ Radius of the Earth: $R_earth = 6371 km$
 
 Distance from to the satellite: $R_sat = R_earth + h$
 
-Orbial Hight: $h_1 = 350km, h_2=650km $
+Orbial Hight: $h_1 = 450km, h_2=650km $
 
-\vspace{5 mm}Since it is uncertain what altitude the satellite will settle in after it is launched, two hights is used in the calculations assumed that the satellite wil settle within this interval.
+\vspace{5 mm}Since it is uncertain what altitude the satellite will settle in after it is launched, two hights is used in the calculations assumed that the satellite wil settle somewhere within this interval.
 
-\vspace{5 mm}$h_1 = 350km$
+\vspace{5 mm}$h_1 = 450km$
 
 equation \ref{Time spent in orbit} 
-$t_1 = 5482.5 s = 91.4 min$
+$t_1 = 5605.8 s = 93.4 min$
 
 \vspace{5 mm}$h_2 = 650km$
 
 equation \ref{Time spent in orbit} $t_2 = 5854.1 s = 97.6 min$
 
-\vspace{5 mm}From Dewald De Bruyns equations one can calculate the longest possible time in eclipse. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations. This power is claculated when the satelite has longest time eclipse.
+\vspace{5 mm}From De Bruyns equations \cite{Satellite Power Systems} one can calculate the longest possible time in eclipse. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations. This power is claculated when the satelite has longest time eclipse.
 
 \begin{equation}t_{ecl,max} = 2\times R_{sat}\times(\frac{R_{sat}}{R\times M})^{\frac{1}{2}}
 \label{Maximum time in eclipse}
@@ -52,10 +52,10 @@ equation \ref{Time spent in orbit} $t_2 = 5854.1 s = 97.6 min$
 \vspace{5 mm}This becomes for each of the possible heights:
 
 equation \ref{Maximum time in eclipse}
-$t_{ecl,max_1} = 2175.75 s = 36.3 min$
+$t_{ecl,max_1} = 2151.1 s = 35.9 min$
 
 equation \ref{Average effect during one orbit}
-$P_{avg,orbit_1} = 3.27W$
+$P_{avg,orbit_1} = 3.34W$
 
 equation \ref{Maximum time in eclipse}
 $t_{ecl,max_2} = 2118.9 s = 35.3 min$
@@ -63,10 +63,10 @@ $t_{ecl,max_2} = 2118.9 s = 35.3 min$
 equation \ref{Average effect during one orbit}
 $P_{avg,orbit_2} = 3.46W$
 
-\vspace{5 mm}These are simpliefied calculations where the teperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but this requires more extensive calculations. The average power calculated here is based on worst- case estimate from De Bruyns and the real average power can be clculated with the exact orbital parameters. 
+\vspace{5 mm}These are simpliefied calculations where the teperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but this requires more extensive calculations. The average power calculated here is based on worst-case estimate from De Bruyns \cite{Satellite Power Systems} and the real average power can be clculated with the exact orbital parameters. 
 
-The battery used in the NUTS Cubsat wil consist of lithium-ferrite-phosphate cells $(LiFePO_4)$. 
-These cells have a typicall voltage of 3.3 V. The Cubesat has $4\times 1.1 Ah$ cells, where two is in serie and two is in parallel. This means a total of $2.2Ah$ at $6.6V$. This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicate the state of charge where $100\% $= empty and  $0\%$ = full.
+The battery used in the NUTS Cubsat wil consist of lithium-ferrite-phosphate cells $(LiFePO_4)$ \cite{Overview of NUTS}. 
+These cells have a typicall voltage of 3.3 V. The Cubesat has $4\times 1.1 Ah$ cells, where two is in serie and two is in parallel. This means a total of $2.2Ah$ at $6.6V$ \cite{Satellite Power Systems}. This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicate the state of charge where $100\% $= empty and  $0\%$ = full (KILDE).
 
 \vspace{5 mm}Total capacity: $C_{tot} = 2.2 Ah$
 
@@ -76,22 +76,32 @@ C_{ecl} = \frac{P_{avg,orbit}}{V_tot}\times t_{ecl,max}
 \label{Battery capacity}
 \end{equation}
 
- $DOD_{max} = \frac{C_{ecl}}{C_{tot}}$
+ \begin{equation}
+DOD_{max} = \frac{C_{ecl}}{C_{tot}}
+\label{Depth Of Discharge}
+\end{equation}
 
 \vspace{5 mm}Calculted with the different hights give:
 
 equation \ref{Battery capacity}
-$C_{ecl_1} = \frac{3.27W}{6.6V}\times(\frac{36.3min}{60\frac{min}{hour}}) = 0.3Ah$
+$C_{ecl_1} = \frac{3.34W}{6.6V}\times(\frac{35.9min}{60\frac{min}{hour}}) = 0.3Ah$
+
+equation \ref{Depth Of Discharge}
+$DOD_1 = 0.136 = 13.6 \%$
 
 equation \ref{Battery capacity}
 $C_{ecl_2} = \frac{3.46W}{6.6V}\times(\frac{35.3min}{60\frac{min}{hour}}) = 0.31 Ah$
 
+equation \ref{Depth Of Discharge}
+$DOD_2 = 0.141 = 14.1\%$
+
+The battery capacity will decrease with the number of charge-discharge cycles. Discharge of at least 80\% is refered to as deep discharge. When the critical DOD is reached it will be in risk of battery failure. From our calcultations the DOD is not in the critical region. 
 
 \vspace{5 mm}To establish the communication time a simplified power balance is used. 
 
 \vspace{5 mm}$P_{radio} = 2.5 W$
 
-$P_{payload} = 5 W in 90s$
+$P_{payload} =$ $5 W$  in  $90s$
 
 Mikrokontroller is in standby and with 18.5mA and 3.3V it uses:
 
@@ -99,19 +109,31 @@ $P_{standby} = 0.0612W$
 
 These numbers are supplied from NUTS and are rough estimates of what can be expected.
 
-\begin{equation} P_{avg,orbit}\times t - P_{payload}\times 90s - P_{standby}\times t= P_{radio}\times t_{communication}
+\begin{equation} P_{avg,orbit}\times t - P_{payload}\times 90 s - P_{standby}\times t= P_{radio}\times t_{communication}
 \label{Communicationtime}
 \end{equation}
 
 Communication time $h_1$:
 
 equation \ref{Communicationtime}
-$t_{communication} = 6856,9s =114.3min$
+$t_{communication} = 7172.12s =110.5 min$
 
 Communication time $h_2$:
 
 equation \ref{Communicationtime}
 $t_{communication} = 7778,77s =129.6min$
+
+The calculations on power- and orbit estimates results in long communication time. There are several simplifications done during this calculations that must be taken into account. The power drawn from the satellite are rough estimates and the available communication time will likely differ from the these results. The calculated communication time provides a good indication and it can be seen that it is time available to connected to a groundstation network.
+
+
+
+
+
+
+
+
+
+
 
 
 
