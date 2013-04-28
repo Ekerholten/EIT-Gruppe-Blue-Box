@@ -1,0 +1,42 @@
+
+
+Presentasjon
+
+Innledning:
+
+- Nytten av et bakkestasjonsnettverk
+- Hvordan fungerer et bakkestasjonsnettverk
+- Hvilke nettverk som er i dag, undersøkt de ulike nettverkene, valgte Carpcomm (hvorfor)
+- Hva er målet vårt? Problemstilling: Koble oss opp mot Carpcomm space network ved hjelp av raspberry pi.
+
+- Valg av raspberry pi:
+		- billig
+		- enkel for sitt bruk
+		- liten
+		- gpio pinne, muligheten til å kobles på criel port.
+
+Prosjektet: Hva er gjort
+
+- Sette opp raspberrry, installere programvaren til Carpcomm.
+	Det denne softwaren gjør er å ta imot data fra antennen og legger det opp i nettverket. Dette gjør at man kan motta data fra flere bakkestasjoner og dele det slik at man får flere nedlastinger per pass.
+- Software:		
+	mulighet for å motta signaler men ikke sende
+	muligheten for å laste opp data på et delt nettverk
+- Lage overgang til antennestyringsboksen slik at vi kan motta signaler fra sattelittene. Om man ikke kan styre antennen rettet mot satelitten så blir overførings hastigheten veldig lav. 
+- Installere hamlib programvaren slik at man kan styre rotoren til antennen med raspberry pi.
+- Utfordring: Antennen har vært nede så har ikke fått testen opp mot denne. Vi fikk derfor ikke testet å motta signaler fra en sattelitt. Vi prøvde derfor å  Koble oss til en tv motaker for å se om carpcomm nettverket fungerte. Dette fungerte :). i teorien så skal det ikke være noe forskjell fra den andre antennen så vi er ganske sikkre på at dette skal fungere. 
+- vi sjekket også muligheten for å bruke usrp (radio) , men denne krever en 1 gbyte ethernet noe raspberry ikke støtter. Vi la derfor denne død. Kunne selvfølgelig brykt eb vanelig pc, men vi ville holde oss til raspberry.
+-
+
+- Veien videre/konklusjon:
+
+- Carpcomm mottar kun det satelitten sender og sender ingenting til satelitten. 
+- Klart å motta signaler med den radioen vi har testet med, men ikke fått testet opp mot sattelitten. 
+- Vi tror at Carpcomm er godt alternativ til et bakkestasjonsnettverk. 
+- Lages en ny overgang mellom raspsperry pi og antennestyringsboksen eller å inkludere funksjonalliteten til antennestyringen inne i raspberry pi. 
+- For at Raspberry pi skal klare å kommunisere med radioen så må vi lage en egen programvare. Dette er noe som kan gjøres som videreføring av prosjektet. Det
+
+
+
+
+
