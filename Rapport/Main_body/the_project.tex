@@ -8,14 +8,14 @@ The problem today is that the transfer antenna on the NUTS satellite is limited.
 
 \section {Software}
 
-The first thing we had to do was to install the Carpcomm software. We installed the CarpSD ground station control software. This is an open-source program primarily developed by the team behind Carpcomm. The purpose of this software is to make it possible to connect to the Carpcomm server. It also makes it possible to control the ground station if you have access to a web-browser. This is possible because the software runs a background process on the Raspberry Pi. The software runs continuously in the background making is possible to connect to at any time and start receiving from satellites. 
+The first thing we had to do was to install the Carpcomm software. We installed the CarpSD ground station control software. This is an open-source program primarily developed by the team behind Carpcomm. The purpose of this software is to make it possible to connect to the Carpcomm server. It also makes it possible to control the ground station if you have access to a web-browser. This is possible because the software runs a background process on the Raspberry Pi. The software runs continuously in the background making is possible to connect to at any time and start receiving from satellites. \n 
 
 The next thing we had to do was to create a entry for our station plotting the latitude, longitude and elevation.    
 Since the Raspberry didn’t have a connector for the box that controls the antenna we had to make a cable so we could get the two components to communicate. (image) 
 We had some troubles with this cable because it wasn't robust enough. We thought about making a new one, but we didn't have the time for it. 
-The last thing we had to do before we could start testing was to install the software for the antenna controller. We installed the Hamlib rotator library since it was supported by our rotator. 
+The last thing we had to do before we could start testing was to install the software for the antenna controller. We installed the Hamlib rotator library since it was supported by our rotator. \n
 
-Now everything was set to start testing the station. We started of with connecting a small TV-antenna to see if we got a signal. On the station page at the Carpcomm website we tuned it to 433.3 MHz. The reason for this  frequency is because its used by the police in Trondheim and there are likely to be a lot of transmissions there.  We managed to receive data and publish it to the Carpcomm network.
+Now everything was set to start testing the station. We started of with connecting a small TV-antenna to see if we got a signal. On the station page at the Carpcomm website we tuned it to 433.3 MHz. The reason for this  frequency is because its used by the police in Trondheim and there are likely to be a lot of transmissions there.  We managed to receive data and publish it to the Carpcomm network. \n
 
 \begin{figure}
 \begin{subfigure}{.5\textwidth}
@@ -24,9 +24,9 @@ Now everything was set to start testing the station. We started of with connecti
 	\label{fig: Transmission}
 \end{subfigure}
 \end{figure}
-A short explanation of the recorded transmission. The x-axis is the frequency and the y-axis it time. Black and gray is noise and the white left of the yellow line is signals.  
+A short explanation of the recorded transmission. The x-axis is the frequency and the y-axis it time. Black and gray is noise and the white left of the yellow line is signals.  \n
 
- Next stop was to try with a full scale antenna. We succeed in receiving data but we could not get the antenna rotor to work. So this remains unsolved. Another problem is that the Carpcomm software only supports retrieving data, not send. So if the satellite does not send by themselves we have no way of telling it to start transmitting. 
+ Next stop was to try with a full scale antenna. We succeed in receiving data but we could not get the antenna rotor to work. So this remains unsolved. Another problem is that the Carpcomm software only supports retrieving data, not send. So if the satellite does not send by themselves we have no way of telling it to start transmitting. \n
 
 
 
