@@ -2,7 +2,7 @@
 
 Communication with the satellite through the groundstation network demands power from the satellite. Without any electrical power a satellite will not be able to support its payload or radio communication. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
 
-Solar panels base their operation on the ability to convert sunlight into electricity. By using semiconductors the photovoltaic effect can be exploited. The conversion process where the suns radiation is converted into an electical current is achieved by creating mobile charged particles in the semiconductor. They are in turn separated by the device structure and produce the electrical current.(kilde) 
+Solar panels base their operation on the ability to convert sunlight into electricity. By using semiconductors the photovoltaic effect can be exploited. The conversion process where the suns radiation is converted into an electrical current is achieved by creating mobile charged particles in the semiconductor. They are in turn separated by the device structure and produce the electrical current.(kilde) 
 
 Batteries are used to store power during eclipse and support the payload. When the satellite is in eclipse the earth blocks the solar radiation and the battery must supply the power.
 
@@ -36,7 +36,7 @@ T(h_2) = 5850s
 
 when inserted into \autoref{eq:satellite_period}.
 
-From De Bruyns equations \cite{Satellite Power Systems} the longest possible time in eclipse can be calculated. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations. This power is claculated when the satellite has its longest time in eclipse.
+From De Bruyns equations \cite{Satellite Power Systems} the longest possible time in eclipse can be calculated. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations. This power is calculated when the satellite has its longest time in eclipse.
 
 \begin{equation}
 	t_{ecl,max} = 2R_{sat}\left(\frac{R_{sat}}{R\times M}\right)^{\frac{1}{2}}
@@ -69,7 +69,7 @@ P_{avg,orbit_2} = 3.46W
 These are simplified calculations where the temperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but including this effect requires more extensive calculations. The average power calculated here is based on worst-case estimate from De Bruyns \cite{Satellite Power Systems}, the real average power can be calculated with the exact orbit parameters. 
 
 The battery used in the NUTS Cubsat wil consist of lithium-ferrite-phosphate cells $(LiFePO_4)$\cite{Overview of NUTS}. 
-These cells have a typical voltage of 3.3 V. NUTS wil have $4\times \unit[1.1]{Ah}$ cells, where two is in serie and two is in parallell(parallell i serie eller serie i parallell?). This means a total of $C=\unit[2.2]{Ah}$ at $\unit[6.6]{V}$ (\cite{Satellite Power Systems} unødvendig?). This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicates the state of charge where $100\% $= empty and  $0\%$ = full (KILDE).
+These cells have a typical voltage of 3.3 V. NUTS wil have $4\times \unit[1.1]{Ah}$ cells, where two is in serie and two is in parallel(parallell i serie eller serie i parallell?). This means a total of $C=\unit[2.2]{Ah}$ at $\unit[6.6]{V}$ (\cite{Satellite Power Systems} unødvendig?). This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicates the state of charge where $100\% $= empty and  $0\%$ = full (KILDE).
 
 The battery capacity used during eclipse: 
 \begin{equation}
