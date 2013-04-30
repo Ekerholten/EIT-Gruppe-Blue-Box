@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}                             % Encode input with UTF8
 \usepackage[T1]{fontenc}                                % Encode output with T1
 \usepackage{lmodern}                                    % Force Computer Modern
+\usepackage{amsmath}
 %\usepackage{a4wide}
 %\usepackage[margin=2.5cm]{geometry}                     % Specify margin
 \usepackage{url}                                        % Allow URLs
@@ -11,6 +12,9 @@
 \usepackage{mathabx}
 \usepackage[]{units}
 \usepackage{todonotes}
+\usepackage{subcaption}
+\usepackage[section]{placeins}
+\usepackage[parfill]{parskip}
 
 %\setcounter{secnumdepth}{0}                             % Manual section numbering
 %\setlength{\parindent}{0pt}                             % No paragraph indentation
@@ -47,13 +51,14 @@
 \listoffigures
 
 % LIST OF TABLES
-\listoftables
+%\listoftables
 
 % THE ACTUAL CONTENTS
 \include{Introduction/Introduction}
 \include{Theory/Theory}
 \include{Main_body/the_project}
 \include{Main_body/further_work}
+\include{Main_body/socialbenefits}
 \include{Main_body/conclusion}
 
 % BIBLIOGRAPHY

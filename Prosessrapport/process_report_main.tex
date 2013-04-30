@@ -2,12 +2,14 @@
 \usepackage[utf8]{inputenc}                             % Encode input with UTF8
 \usepackage[T1]{fontenc}                                % Encode output with T1
 \usepackage{lmodern}                                    % Force Computer Modern
-%\usepackage{a4wide}
+\usepackage{a4wide}
 %\usepackage[margin=2.5cm]{geometry}                     % Specify margin
 \usepackage{url}                                        % Allow URLs
 \usepackage{color,hyperref}                             % Hyperlink and colour customization
 \usepackage{graphicx}                                   % Allow images
 \usepackage{booktabs}                                   % Snazzy tables
+\usepackage{pdfpages}
+%\usepackage[titletoc,title]{appendix}
 
 %\setcounter{secnumdepth}{0}                             % Manual section numbering
 %\setlength{\parindent}{0pt}                             % No paragraph indentation
@@ -25,7 +27,7 @@
 % PDF metadata
 \hypersetup{pdftitle={Process Report Group 2 Experts in team},
             pdfauthor={Eirik Skjeggestad Dale, Hanne Thorshaug Andresen, Marius Ekerholt, Børge Irgens, Leif-Einar H. Pettersen, Hallstein Skjølsvik},
-            pdfkeywords={EiT},
+            pdfkeywords={EiT, Process},
 }
 
 
@@ -36,12 +38,13 @@
 \input{./title.tex}
 
 \include{Preface/Abstract}
+\include{Preface/Preface}
 
 % TABLE OF CONTENTS
 \tableofcontents
 
 % LIST OF FIGURES
-\listoffigures
+%\listoffigures
 
 % LIST OF TABLES
 %\listoftables
@@ -49,8 +52,11 @@
 % THE ACTUAL CONTENTS
 \include{Introduction/Introduction}
 \include{Main_body/project}
-\include{Main_body/decition}
+\include{Main_body/decision}
+\include{Main_body/conflict}
+\include{Maturitylevel}
 \include{Reflections/reflection}
+\include{Appendix/Appendix}
 
 % BIBLIOGRAPHY
 \include{Bibliography/Bibliography}

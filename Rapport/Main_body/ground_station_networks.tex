@@ -1,52 +1,52 @@
-\subsection{Ground station networks}
+\section{Ground station networks}
 
-There are a lot of unknowns in this area. We don't know what network will be used, who will be participating or what kind of radio equipment will be used. A part of this project is to simulate some different possible ground networks to find how much data we can realistically download.  
-Simulating a network consisting of NTNU and Aalborg University is interesting, since Aalborg University are the developers of the BlueBox satellite network. 
+There are a lot of unknowns in this area. We don't know which network will be used, who will be participating or what kind of radio equipment participants will have. 
 
-% Figurer
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.7\textwidth]{Figures/range_ntnu_aalborg}
-  \end{center}
-  \caption{Ground station network: NTNU and Aalborg}
-  \label{fig:range_ntnu_aalborg}
-\end{figure}
+Some different possible networks are simulated using the same constraints as at Gløshaugen. The results are summarised in \autoref{tab:networks}.
 
 \begin{figure}
-  \begin{center}
-    \includegraphics[width=0.7\textwidth]{Figures/range_ntnu_svalbard}
-  \end{center}
-  \caption{Ground station network: NTNU and UNIS}
-  \label{fig:range_ntnu_unis}
+\begin{subfigure}{.5\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/range_ntnu_aalborg}
+	\label{fig:range_ntnu_aalborg}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/range_ntnu_svalbard}
+	\label{fig:range_ntnu_unis}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/range_ntnu_narvik}
+	\label{fig:range_ntnu_narvik}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/range_ntnu_stanford}
+	\label{fig:range_ntnu_narvik}
+\end{subfigure}
+\caption{Some possible ground networks}
+\label{fig:ground_networks}
 \end{figure}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.7\textwidth]{Figures/range_ntnu_narvik}
-  \end{center}
-  \caption{Ground station network: NTNU and UiN}
-  \label{fig:range_ntnu_unis}
-\end{figure}
-
-
-A ground station network consisting of NTNU and Aalborg University is not very efficent, see Fig. \ref{fig:range_ntnu_aalborg}. 
- 
-
-
-The results are summarised in Table \ref{tab:networks}.
 
 \begin{table}
-\begin{center}
-\begin{tabular}{l | c c}
-  Other locations & Time & Improvement \\
-\hline \hline
-  Aalborg & 790s &  50\% \\
-\hline
-  Longyearbyen & 1900s & 260\% \\
-\hline
-  Narvik & 900s & 73\%  \\
-\end{tabular}
-\end{center}
-\caption{Some data}
-\label{tab:networks}
+	\begin{center}
+	\begin{tabular}{l | c c}
+  	Other locations & Time & Improvement \\
+	\hline \hline
+	Aalborg & 790s &  50\% \\
+	\hline
+	Longyearbyen & 1900s & 260\% \\
+	\hline
+	Narvik & 900s & 73\%  \\
+	\hline
+	Stanford & 800s & 54\% 
+	\end{tabular}
+	\end{center}
+	\caption{Results of simulations}
+	\label{tab:networks}
 \end{table}
+
+These results show that even cooperating with other norwegian/scandinavian universities will result in significant gains in download capacity, even though there will be a certain overlap in coverage. Cooperating with other universities further afield will also increase download capacity, but if they are located at lower latitudes the decreased number of passes observed will decrease their contribution.  
+
+
