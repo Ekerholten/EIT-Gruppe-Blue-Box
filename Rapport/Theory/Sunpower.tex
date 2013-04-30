@@ -1,8 +1,12 @@
-\section{Power supply and communication time}
+\section{Solar Power}
 
-Communication with the satellite through the groundstation network demands power from the satellite. Without any electrical power a satellite will not be able to support its payload or radio communication, and hence a groundstation network is not possible. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
+Communication with the satellite through the groundstation network demands power from the satellite. Without any electrical power a satellite will not be able to support its payload or radio communication. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
 
-Batteries are used to store power during eclipse and support the payload. When the satellite is in eclipse the earth blocks the solar radiation and the battery must supply the power. Identifying the satellites communication time is necessary to establish if a groundstation network is possible. Forthcoming calculations are based on an estimate done by De Bruyne \cite{Satellite Power Systems}.
+Solar panels base their operation on the ability to convert sunlight into electricity. By using semiconductors the photovoltaic effect can be exploited. The conversion process where the suns radiation is converted into an electrical current is achieved by creating mobile charged particles in the semiconductor. They are in turn separated by the device structure and produce the electrical current.(kilde) 
+
+Batteries are used to store power during eclipse and support the payload. When the satellite is in eclipse the earth blocks the solar radiation and the battery must supply the power.
+
+Identifying the satellites communication necessary to establish if a groundstation network is profitable. Forthcoming calculations are based on an estimate done by De Bruyne \cite{Satellite Power Systems}.
 
 When estimating the period of the satellite the Earth and satellite orbit is assumed to be spheres. Kepler`s third law for circular orbits is used:
 
@@ -46,9 +50,9 @@ From De Bruyns equations \cite{Satellite Power Systems} the longest possible tim
 
 Putting in $h_1 =\unit[450]{km}$ and $h_2 = \unit[650]{km}$ gives:
 
-\begin{equation}
-t_{\text{ecl},h_1 } = \unit[2151.1]{s} = \unit[35.9]{min}
-\end{equation}
+%\begin{equation}
+%t_{\text{ecl,max_1}} = \unit[2151.1]{s} = \unit[35.9]%{min}
+%\end{equation}
 
 \begin{equation}
 P_{\text{avg},h_1} = \unit[3.34]{W}
@@ -64,8 +68,8 @@ P_{\text{avg},h_2} = \unit[3.46]{W}
 
 These are simplified calculations where the temperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but including this effect requires more extensive calculations. The average power calculated here is based on worst-case estimate from De Bruyns \cite{Satellite Power Systems}, the real average power can be calculated with the exact orbit parameters. 
 
-The battery used in the NUTS Cubsat wil consist of lithium-ferrite-phosphate cells $(LiFePO_4)$\cite{Overview of NUTS}. 
-These cells have a typical voltage of 3.3 V. NUTS wil have $4\times \unit[1.1]{Ah}$ cells, where two are in series and two series are in parallel. This means a total of $C=\unit[2.2]{Ah}$ at $\unit[6.6]{V}$\cite{Satellite Power Systems}. This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicates the state of charge where $\text{DOD} = 100\% $ is a empty battery and $\text{DOD}=0\%$ is a full battery.
+The battery used in the NUTS Cubesat will consist of lithium-ferrite-phosphate cells $(LiFePO_4)$\cite{Overview of NUTS}. 
+These cells have a typical voltage of 3.3 V. NUTS will have $4\times \unit[1.1]{Ah}$ cells, where two are in series and two series are in parallel. This means a total of $C=\unit[2.2]{Ah}$ at $\unit[6.6]{V}$\cite{Satellite Power Systems}. This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicates the state of charge where $\text{DOD} = 100\% $ is a empty battery and $\text{DOD}=0\%$ is a full battery.
 
 The battery capacity used during eclipse: 
 \begin{equation}
