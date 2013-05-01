@@ -2,3 +2,5 @@
 As it stands now the Carpcomm Space Network can not be used at the same time as the rest of the ground station systems. It is fairly simple to implement code to upload data to Carpcomm, so a possible solution may be to integrate CSN support in the already existing software. Then the existing solution can be used to control the radio and antennas, and data can be uploaded to the network when the ground station is idle.
 
 Alternatively the Carpcomm software can be used. In that case rotor control must be improved. A modification to CarpSD or the driver for the rotor interface will probably be necessary. The existing rotor interface has some quirks that makes the movement very choppy, which can be bad for the antennas and rotors. Because of this it is desirable with a new rotor interface. The Raspberry Pi have the necessary inputs and outputs to act as an interface, it just needs some voltage converters and software to control it.
+
+The solution using the gpio connectors to connect to the rotor control must be improved. Either a more robust cable and connection must be made, or the serial port connector integrated in the chassis.
