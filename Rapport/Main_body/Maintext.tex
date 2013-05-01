@@ -1,7 +1,7 @@
 \chapter{Ground Station Networks}
+%This chapter will present the different technologies, theory behind the reasoning for having multiple ground stations listen to our satellite and calculations on sufficient power supply. 
 
-This chapter will present the different technologies, theory behind the reasoning for having multiple ground stations listen to our satellite and calculations on sufficient power supply. 
-
+This chapter will present the some theory and simulations regarding ground station networks and power supply. Different network technologies are also presented and our solution is presented.
 
 %Before we started our project, we did quite a lot of prestudy, covering which technology was available, to determine which fit our project best. This chapter will contain a summary of the different technologies, and also some theory behind the reasoning for having multiple ground stations listen to our satellite.
 
@@ -14,8 +14,8 @@ This chapter will present the different technologies, theory behind the reasonin
 \input{Main_body/PYXIS}
 \input{Main_body/Carpcomm}
 
-\paragraph{What we chose}
-After exploiting the different alternatives, BlueBox seemed as a good choice. However this would require support from Aalborg University that they could not present, as they were busy with a satellite launch of their own. Carpcomm Space Network is a network of ground stations that already have participants. This network is then more complete than the other alternatives, as well as it is more achievable than connecting to PYXIS with BlueBox. The solution then became to use a Raspberry pi to connect the ground station at Gløshaugen to Caprcomm Space Network.
+\paragraph{Why we chose Carpcomm}
+After exploring the different alternatives, BlueBox seemed to be a good choice. However this would require some support from Aalborg University. This was impossible, as they were busy with a satellite launch of their own. Carpcomm Space Network is a network of ground stations that already have participants. This network is actually up and running and all the necessary resources are available at their home page. We wanted to test this ground station network without interfering with the system already in place. The solution was to use a Raspberry pi to connect the ground station at Gløshaugen to the Carpcomm Space Network.
  
 \input{Main_body/raspberrypi}
 
