@@ -1,23 +1,13 @@
 \begin{abstract}
 
-Today the NTNU Test Satellite is using amateur radio and the transfer rate will therefore be very limited, of only 9600 bps. Combined with the limited access time to the satellite this means a very limited 600 kB of data can be downloaded per day. Since the antenna limits the transfer rate, a network of ground stations can be utilized to increase the transfer rate without having to changing the antenna. 
+The NTNU Test Satellite will be using amateur radio and will therefore have a very limited transfer rate of 9600 bps. Combined with the limited access time to the satellite this means a very limited 600 kB of data can be downloaded per day. 
 
-The aim of this project was to consider some possible networks, examine whether such a network would be beneficial, and set up a ground station network at the student ground station at Gløshaugen. 
+The aim of this project was set up a ground station network at the student ground station here at Gløshaugen and increase the download capacity. To achieve this several ground station network were explored and the Carpcomm Space Network was selected as the most suitable for this project. 
 
-Different ground station network are today available, but a network is dependent on other ground stations as participants to be beneficial. Carpcomm Space Network is an existing network which is already connected, and therefore seemingly the best choice. 
+We have set up a Raspberry Pi as a ground station and connected it to the Carpcomm Space Network. However we've found that it lacks support for many kinds of radios and the rotor control functionality is still experimental. And in addition it can't transmit to the satellite, so it can't be used to initiate downloads. 
 
-To connect the ground station at Gløshaugen to the Carpcomm Space Network a Raspberry Pi were used to run the required software. During our work we discovered that it lacks support for many kinds of radios and the rotor control functionality is still experimental. In addition it cannot transmit to the satellite, and cannot be used to initiate downloads. 
+Our simulations show that even a small network will drastically increase the amount of data that can be downloaded. Calculations on the power supply for the satellite shows that there is sufficient power available to connect and communicate with a ground station network. If the challenges related to the rotor functionality can be overcome the improvements on data obtained from the satellite can be substantial.
 
-Results from our simulations show that even a small network with either Norwegian/Scandinavian universities will result in a significant gain in download capacity. If the discovered challenges can be overcome the improvements can be substantial. Another factor that must be taken into considerations when planning a network of ground stations is the position of the different nodes. The efficiency of a network of ground stations is reduced when the communication ranges overlap. Gløshaugen ground station should have the nodes geographically far apart to achieve a sufficient network. In this case the ground stations must be more than 1600 km apart to have maximum efficiency. A network of ground stations demands more power as the communication time increase. Calculations on the power supply were performed to verify that the satellite would have sufficient power to support this increase in demand.
-
-However, further work must be carried out so that the Carpcomm Space Network can be fully exploited, but if this is done it will bring great benefits. Increased amount of data will lead to greater expertise in satellite research, which is useful for the society.
-
-
-%The NTNU Test Satellite will be using amateur radio and will therefore have a very limited transfer rate of 9600 bps. Combined with the limited access time to the satellite this means a very limited 600 kB of data can be downloaded per day. 
-
-%The aim of this project was to consider some possible networks and set up a ground station network at the student ground station here at Gløshaugen. 
-
-%We have set up a Raspberry Pi as a ground station and connected it to the Carpcomm Space Network. However we've found that it lacks support for many kinds of radios and the rotor control functionality is still experimental. And in addition it can't transmit to the satellite, so it can't be used to initiate downloads. Our simulations show that even a small network will drastically increase the amount of data that can be downloaded, so if these challenges can be overcome the improvements can be substantial.
 
 \end{abstract}
 
