@@ -19,16 +19,15 @@ After exploiting the different alternatives, BlueBox seemed as a good choice. Ho
  
 \input{Main_body/raspberrypi}
 
-\section {Software}
+\section {Connecting to the Network}
 
-The first thing we had to do was to install the Carpcomm software. We installed the CarpSD ground station control software. This is an open-source program primarily developed by the team behind Carpcomm. The purpose of this software is to make it possible to connect to the Carpcomm server. It also makes it possible to control the ground station if you have access to a web-browser. This is possible because the software runs a background process on the Raspberry Pi. The software runs continuously in the background making is possible to connect to at any time and start receiving from satellites.
+To connect the ground station to the Carpcomm Space Network the Carpcomm software was installed. The CarpSD ground station control software used is an open-source program primarily developed by the team behind Carpcomm. The purpose of this software is to make it possible to connect to the Carpcomm server. It also makes it possible to control the ground station if you have access to a web-browser. This is possible because the software runs a background process on the Raspberry Pi. The software runs continuously in the background making is possible to connect to at any time and start receiving from satellites.
 
-The next thing we had to do was to create a entry for our station plotting the latitude, longitude and elevation.    
-Since the Raspberry didn’t have a connector for the box that controls the antenna we had to make a cable so we could get the two components to communicate. (image) 
-We had some troubles with this cable because it wasn't robust enough. We thought about making a new one, but we didn't have the time for it. 
-The last thing we had to do before we could start testing was to install the software for the antenna controller. We installed the Hamlib rotator library since it was supported by our rotator. 
+Further an entry for our station, plotting the latitude, longitude and elevation, were created. 
+Since the Raspberry didn‚Äôt have a connector for the box that controls the antenna a cable had to be made so that the two components could communicate. (image) 
+This cable led to some challenges since it wasn't robust enough, and if there had been more time a new and stronger cable would have been made. Before starting testing the software controlling the antenna had to be installed. Hamblib rotator library was chosen since the rotator used supports it. 
 
-Now everything was set to start testing the station. We started of with connecting a small TV-antenna to see if we got a signal. On the station page at the Carpcomm website we tuned it to 433.3 MHz. The reason for this  frequency is because its used by the police in Trondheim and there are likely to be a lot of transmissions there.  We managed to receive data and publish it to the Carpcomm network.
+With everything set the testing of the station could start. The testing was started of with connecting to a small TV-antenna to register the signal. On the station page at the Carpcomm website the frequency was set to 433.3 MHz. The reason for this frequency is because it used by the police in Trondheim, and there are likely to be a lot of transmissions there. Data was successfully received and publish to the Carpcomm Space Network.
 
 \begin{figure}
 	\centering
@@ -37,7 +36,6 @@ Now everything was set to start testing the station. We started of with connecti
 \end{figure}
 A short explanation of the recorded transmission. The x-axis is the frequency and the y-axis it time. Black and gray is noise and the white left of the yellow line is signals.
 
-Next stop was to try with a full scale antenna. We succeed in receiving data with the Carpcomm software, but we could not get the automated rotor control to work. So this remains unsolved. Another problem is that the Carpcomm software only supports receiving data, not sending. So if we must command the satellite to start transmitting, some other solution must be devised. 
-
+After receiving data from the TV-antenna, a full-scale antenna was used. The Carpcomm software succeeded in receiving data, but the automated rotor control did not work. This is a problem that remains unsolved and must be worked on further. Another problem is that the Carpcomm software only supports receiving data, not sending. This means that one must command the satellite to start transmitting, and some other solution must consequently be devised. 
 
 
