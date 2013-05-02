@@ -1,0 +1,116 @@
+\section{Satellite Power System}
+
+Communication with the satellite through the groundstation network demands power from the satellite. Without any electrical power a satellite will not be able to support its payload or radio communication. NUTS double CubeSat uses sunlight as an energy source through solar panels. 
+
+Batteries are used to store power during eclipse and support the payload. When the satellite is in eclipse the earth blocks the solar radiation and the battery must supply the power. Identifying the satellites communication time based on the power available is necessary to establish if a groundstation network is profitable. Forthcoming calculations are based on an estimate done by De Bruyne \cite{Satellite Power Systems}.
+
+When estimating the period of the satellite the Earth and satellite orbit is assumed to be spheres. Kepler`s third law for circular orbits is used:
+
+\begin{equation}
+\left(\frac{2\pi}{T}\right)^2 = \frac{GM}{R^3}
+\label{eq:Keplers_3}
+\end{equation}
+
+Where T is the period of the satellite, G is the gravitational constant\footnote{$G=\unitfrac[6.6742\cdot 10^{-11}]{km^3}{s^2}$}, M is the mass of the Earth\footnote{$M=\unit[5.9736\cdot 10^{24}]{kg}$} and R is the distance between the centers of mass of the Earth and the satellite.
+
+\begin{equation}
+T = 2\pi \left(\frac{R^3}{GM}\right)^{\frac{1}{2}}
+\label{eq:satellite_period}
+\end{equation}
+
+where $R = R_\Earth + h$ where $R_\Earth$ is the radius of the earth\footnote{$R_\Earth = \unit[6371]{km}$} and h is the altitude of the satellite. 
+Since it is uncertain what altitude the satellite will settle in after it is launched, two heights are used in the calculations and it's assumed that the satellite wil settle somewhere within interval $h_1=\unit[450]{km}$ and $h_2=\unit[650]{km}$. 
+Which gives
+
+\begin{equation}
+T(h_1) = \unit[5610]{s} = \unit[93.5]{min}
+\end{equation}
+
+\begin{equation}
+T(h_2) = \unit[5850]{s} = \unit[97.5]{min}
+\end{equation}
+
+when inserted into \autoref{eq:satellite_period}.
+
+From De Bruyns equations \cite{Satellite Power Systems} the longest possible time in eclipse can be calculated. The worst case average power is approximately $P_{avg} = 5.42 W$ from by De Bryens calculations. This power is calculated when the satellite has its longest time in eclipse.
+
+\begin{equation}
+	t_{\text{ecl,max}} = 2R_{sat}\left(\frac{R_{sat}}{MR}\right)^{\frac{1}{2}}
+	\label{Maximum time in eclipse}
+\end{equation}
+
+\begin{equation}
+	P_{\text{avg,orbit}} = P_{avg}\times\frac{(t-t_{ecl,max})}{t}
+	\label{Average effect during one orbit}
+\end{equation}
+
+Putting in $h_1 =\unit[450]{km}$ and $h_2 = \unit[650]{km}$ gives:
+
+\begin{equation}
+t_{\text{ecl},max_1} = \unit[2151.1]{s} = \unit[35.9]{min}
+\end{equation}
+
+\begin{equation}
+P_{\text{avg},h_1} = \unit[3.34]{W}
+\end{equation}
+
+\begin{equation}
+t_{\text{ecl},max_2} = \unit[2118.9]{s} = \unit[35.3]{min}
+\end{equation}
+
+\begin{equation}
+P_{\text{avg},h_2} = \unit[3.46]{W}
+\end{equation}
+
+These are simplified calculations where the temperature changes of the solar cells is not taken into account. As the satellite moves through orbit the temperature will effect the solar cells, but including this effect requires more extensive calculations. The average power calculated here is based on worst-case estimate from De Bruyns \cite{Satellite Power Systems}, the real average power can be calculated with the exact orbit parameters. 
+
+The battery used in the NUTS Cubesat will consist of lithium-ferrite-phosphate cells $(LiFePO_4)$\cite{Overview of NUTS}. 
+These cells have a typical voltage of 3.3 V. NUTS will have $4\times \unit[1.1]{Ah}$ cells, where two are in series and two series are in parallel. This means a total of $C=\unit[2.2]{Ah}$ at $\unit[6.6]{V}$\cite{Satellite Power Systems}. This is used to calculate the worst-case Depth Of Discharge (DOD). The DOD represents the percentage of the discharged battery capacity expressed as a percentage of maximum capacity. It indicates the state of charge where $\text{DOD} = 100\% $ is a empty battery and $\text{DOD}=0\%$ is a full battery.
+
+The battery capacity used during eclipse: 
+\begin{equation}
+C_{ecl} = \frac{P_{avg,orbit}}{V_tot}\times t_{ecl,max}
+\label{Battery capacity}
+\end{equation}
+
+ \begin{equation}
+DOD_{max} = \frac{C_{ecl}}{C_{tot}}
+\label{Depth Of Discharge}
+\end{equation}
+
+Calculated with the different heights gives:
+
+equation \ref{Battery capacity}
+$C_{ecl_1} = \frac{\unit[3.34]{W}}{\unit[6.6]{V}}\times(\frac{\unit[35.9]{min}}{\unit[60]{min}{hour}}) = \unit[0.3]{Ah}$
+
+equation \ref{Depth Of Discharge}
+$DOD_1 = 0.136 = 13.6 \%$
+
+equation \ref{Battery capacity}
+$C_{ecl_2} = \frac{\unit[3.46]{W}}{\unit[6.6]{V}}\times(\frac{\unit[35.3]{min}}{\unit[60]{min}{hour}}) = \unit[0.31]{Ah}$
+
+equation \ref{Depth Of Discharge}
+$DOD_2 = 0.141 = 14.1\%$
+
+The battery capacity will decrease with the number of charge-discharge cycles. Discharge of at least 80\% is refered to as deep discharge. When the critical DOD is reached it will be in risk of battery failure. From our calcultations the DOD is not in the critical region. 
+
+To establish the communication time a simplified power balance is used. We assume that the radio uses $P_{\text{radio}} = \unit[2.5]{W}$ and the payload uses $P_{\text{payload}} = \unit[5]{W}$  for ninety seconds. The standby power is unknown, but a microcontroller in standby running of 18.5mA and 3.3V uses $P_{\text{standby}} = \unit[0.0612]{W}$ 
+
+These numbers come from various NUTS/NTNU publications are only rough estimates of what can be expected.
+
+\begin{equation}
+P_{\text{avg,orbit}}\cdot t - P_{\text{payload}}\times 90 s - P_{\text{standby}}\times t= P_{\text{radio}}\times t_{\text{communication}}
+\label{eq:communication_time}
+\end{equation}
+
+\autoref{eq:communication_time} is a simplified model for computing the amount of time the satellite can broadcast. Inserting $h_1$ and $h_2$ gives:
+
+\begin{equation}
+t_{\text{communication}} = \unit[7172.12]{s} =\unit[110.5]{min}
+\end{equation}
+
+\begin{equation}
+t_{\text{communication}} = \unit[7778.77]{s} =\unit[129.6]{min}
+\end{equation}
+
+The calculations on power- and orbit estimates results in long communication time. There are several simplifications done during these calculations. The power drawn from the satellite are rough estimates and the available communication time will likely differ from the these results. Since $t_{\text{communication}}>T$ we think that there will be enough power for communication even without these simplifications.

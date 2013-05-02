@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}                                % Encode output with T1
 \usepackage{lmodern}                                    % Force Computer Modern
 \usepackage{amsmath}
-%\usepackage{a4wide}
+\usepackage{a4wide}
 %\usepackage[margin=2.5cm]{geometry}                     % Specify margin
 \usepackage{url}                                        % Allow URLs
 \usepackage{color,hyperref}                             % Hyperlink and colour customization
@@ -54,12 +54,10 @@
 %\listoftables
 
 % THE ACTUAL CONTENTS
-\include{Introduction/Introduction}
-\include{Theory/Theory}
-\include{Main_body/the_project}
-\include{Main_body/further_work}
-\include{Main_body/socialbenefits}
-\include{Main_body/conclusion}
+\input{Introduction/Introduction}
+%\include{Theory/Theory}
+\input{Main_body/Maintext}
+
 
 % BIBLIOGRAPHY
 \include{Bibliography/Bibliography}

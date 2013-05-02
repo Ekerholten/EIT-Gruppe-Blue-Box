@@ -1,0 +1,52 @@
+\chapter{Ground Station Networks}
+%This chapter will present the different technologies, theory behind the reasoning for having multiple ground stations listen to our satellite and calculations on sufficient power supply. 
+
+This chapter will present some theory and simulations regarding ground station networks and power supply and information about some of the available technologies are explored. The reason why we chose a particular network, our implementation of it and our results are also presented. 
+
+%Before we started our project, we did quite a lot of prestudy, covering which technology was available, to determine which fit our project best. This chapter will contain a summary of the different technologies, and also some theory behind the reasoning for having multiple ground stations listen to our satellite.
+
+\input{Main_body/satellite_communication}
+\input{Main_body/Sunpower}
+\input{Main_body/ground_station_networks}
+\section{Network technology for ground stations}
+
+\input{Main_body/Genso}
+\input{Main_body/PYXIS}
+\input{Main_body/Carpcomm}
+
+\paragraph{Why we chose Carpcomm}
+After exploring the different alternatives, BlueBox seemed to be a good choice. However this would require some support from Aalborg University. This was impossible, as they were busy with a satellite launch of their own. GENSO is not up and running yet, so it is not suitable for our purposes. The Carpcomm Space Network is a network of ground stations that already have participants. This network is actually up and running and all the necessary resources are available at their web site. We wanted to test this ground station network without interfering with the system already in place. The solution was to use a Raspberry pi to connect the ground station at Gløshaugen to the Carpcomm Space Network.
+ 
+\input{Main_body/raspberrypi}
+
+\section {Connecting to the Network}
+
+To connect the ground station to the Carpcomm Space Network the Carpcomm software was installed on the Raspberry pi. The CarpSD ground station control software used is an open-source program primarily developed by the team behind Carpcomm. The purpose of this software is to make it possible to connect to the Carpcomm Space Network server. The software runs as a background process and makes it possible to control the ground station if you have access to a internet browser. The software runs continuously in the background making it possible to connect remotely at any time and start receiving data from satellites.
+
+To register our ground station with the network an entry for our station, plotting the latitude, longitude and elevation, were created. 
+Before starting testing, the software controlling the antenna had to be installed. The Hamlib rotator library was chosen since the ground station already uses it and CarpSD supports it. 
+
+With everything set the testing of the station could start. The testing was started of with connecting to a small TV-antenna to register the signal. On the station page at the Carpcomm website the frequency was set to 433.3 MHz. This frequency was chosen because it is used by the police in Trondheim, and there are likely to be a lot of transmissions there. Data (see \autoref{fig:Transmission}) was successfully received and sent to the Carpcomm Space Network. After receiving data from the TV-antenna, a full-scale antenna was used.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/sattelite_transmition}
+	\label{fig:Transmission}
+	\caption{A signal recorded by the Carpcomm Space Network}
+The x-axis is the frequency and the y-axis is time. Black and gray is noise and the white line to the left of the yellow line is the signal.
+\end{figure}
+
+\subsection{Results}
+The Carpcomm software are easy to install and set up, as long as the hardware, e.g. radio and rotors, is supported. The supported radios are all small and inexpensive, which makes them suitable for radio amateurs who want to help with receiving satellite transmissions. These smaller radios can only use one antenna, and since only one radio can be used Carpcomm can only receive either UHF or VHF signals. Unfortunately this makes it less suitable for us, since we want to use a more advanced radio which is not supported.
+
+Since we could not get the software to control the antenna rotors to work properly we can only receive data from satellites in a small area of the sky, which makes the station less useful.
+
+Since the network can not be used to tell remote stations to transmit commands to the satellite, it is only suitable if data can be transmitted automatically or continuously.
+
+All this means that the Carpcomm Space Network is suitable for radio amateurs who wants an inexpensive way to help the micro satellite community. For professional usage it lacks important features and hardware compatibility.
+
+\input{Main_body/Summary}
+
+%The Carpcomm software succeeded in receiving data, but the automated rotor control did not work. This is a problem that remains unsolved and must be worked on further. Another problem is that the Carpcomm software only supports receiving data, not sending. This means that one must command the satellite to start transmitting, and some other solution must consequently be devised. 
+
+
